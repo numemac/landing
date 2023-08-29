@@ -24,7 +24,7 @@ export default function Header() {
             <img
               className="h-12 w-auto"
               src={Wordmark}
-              alt=""
+              alt="Wordmark"
             />
           </a>
         </div>
@@ -60,7 +60,7 @@ export default function Header() {
               <img
                 className="h-12 w-auto"
                 src={Wordmark}
-                alt=""
+                alt="Wordmark"
               />
             </a>
             <button
