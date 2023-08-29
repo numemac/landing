@@ -1,6 +1,6 @@
 {
   "name": "landing",
-  "homepage": "https://veganism.social/about",
+  "homepage": "/about",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && mkdir build/about && mv build/static build/about/static",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "PORT=3006 serve -s build"

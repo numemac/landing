@@ -1,9 +1,13 @@
+import Engadget from './engadget.png'
+import LinuxMagazine from './linux-magazine.png'
+import MakeUseOf from './makeuseof.png'
+
 export default function LogoCloud() {
 
   var logos = [
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Engadget-logo.svg/1280px-Engadget-logo.svg.png',
-    'https://upload.wikimedia.org/wikipedia/en/0/05/Linux_Magazine_international_logo.png',
-    'https://upload.wikimedia.org/wikipedia/commons/9/93/MakeUseOf-logo.png',
+    Engadget,
+    LinuxMagazine,
+    MakeUseOf,
   ]
 
   return (
