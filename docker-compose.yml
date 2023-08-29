@@ -1,5 +1,5 @@
 services:
-  web:
+  landing:
     image: auguryan/landing
     restart: always
     ports:
