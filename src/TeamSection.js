@@ -9,7 +9,7 @@ export default class TeamSection extends Component {
       this.setState({ team: {}, loaded_accts: [] })
 
       team_accts.forEach((acct) => {
-        fetch(`team/${acct}.json`)
+        fetch(`/about/team/${acct}.json`, { mode: 'cors' })
           .then(response => response.json())
           .then(data => {
             this.setState((state) => ({ loaded_accts: [...state.loaded_accts, acct].filter((value, index, array) => array.indexOf(value) === index) }))
@@ -39,7 +39,7 @@ export default class TeamSection extends Component {
         >
           {loaded_accts.filter((acct) => team[acct]).map((acct) => team[acct]).map((person) => (
             <li key={person?.id}>
-              <a href={person?.url} className="block" key={person?.name}>
+              <a href={person?.url} className="block" key={person?.name} alt="avatar">
                 <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={person?.avatar} alt="" />
                 <h3 className="mt-6 text-lg font-semibold leading-8 text-gray-900">{person?.display_name}</h3>
                 <p className="text-base leading-7 text-gray-600">{(person?.roles && person?.roles[0]) ? person?.roles[0]["name"] : ''}</p>

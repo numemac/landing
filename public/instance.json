@@ -1,7 +1,7 @@
 {
   "uri": "veganism.social",
   "title": "Veganism Social",
-  "short_description": "Veganism Social is a place on the internet for vegans to make friends and interact with the wider decentralized social media.",
+  "short_description": "Veganism Social is a welcoming space on the internet for vegans to connect and engage with the broader decentralized social media community.",
   "description": "A decentralized social network for vegans with a focus on animal rights.",
   "email": "admin@veganism.social",
   "version": "4.2.0-beta2+vegan",
@@ -10,7 +10,7 @@
   },
   "stats": {
     "user_count": 2437,
-    "status_count": 56313,
+    "status_count": 56322,
     "domain_count": 19521
   },
   "thumbnail": "https://sfo3.digitaloceanspaces.com/veganism-space/site_uploads/files/000/000/005/@1x/079b8cddf3e03483.png",
@@ -92,7 +92,7 @@
     "header_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/373/550/092/719/344/original/75019787a4e4b0ba.jpeg",
     "followers_count": 1338,
     "following_count": 1077,
-    "statuses_count": 480,
+    "statuses_count": 479,
     "last_status_at": "2023-08-29",
     "noindex": false,
     "emojis": [],

@@ -14,6 +14,16 @@ import Footer from './Footer'
 class App extends Component {
 
   componentDidMount() {
+    fetch('/about/instance.json', { mode: 'cors' }) // 'https://veganism.social/api/v1/instance
+        .then(response => response.json())
+        .then(data => this.setState({ instance: data }));
+
+    fetch('/about/directory.json', { mode: 'cors' })
+        .then(response => response.json())
+        .then(data => this.setState({ directory: data }));
+  }
+
+  render() {
     if (!this.state) {
       this.setState(
         {
@@ -30,17 +40,7 @@ class App extends Component {
         }
       )
     }
-    fetch('instance.json') // 'https://veganism.social/api/v1/instance
-        .then(response => response.json())
-        .then(data => this.setState({ instance: data }));
 
-    fetch('directory.json')
-        .then(response => response.json())
-        .then(data => this.setState({ directory: data }));
-  }
-
-  render() {
-    if (!this.state) return (<div>Loading...</div>);
     const { instance, directory } = this.state;
 
     return (

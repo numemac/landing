@@ -12,10 +12,10 @@ export default class ProfilesSection extends Component {
         >
           {directory?.filter((acct) => acct.bot == false).sort((a, b) => b.followers_count - a.followers_count).slice(0, 14).map((acct) => (
             <li key={acct.id}>
-              <a href={acct.url} className="block">
+              <a href={acct.url} className="block" alt="avatar">
                 <img className="mx-auto h-24 w-24 rounded-full" src={acct.avatar} alt="" />
                 <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">{acct.display_name}</h3>
-                <p className="text-sm leading-6 text-gray-600">{acct.followers_count} Followers</p>
+                <p className="text-sm leading-6 text-gray-600">@{acct.username}</p>
               </a>
             </li>
           ))}

@@ -90,7 +90,7 @@ export default class HeroSection extends Component {
                   <div className="relative">
                     <img
                       src={directory[0] ? directory[0].avatar : AvatarPlaceholder}
-                      alt=""
+                      alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -100,7 +100,7 @@ export default class HeroSection extends Component {
                   <div className="relative">
                     <img
                       src={directory[1] ? directory[1].avatar : AvatarPlaceholder}
-                      alt=""
+                      alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -108,7 +108,7 @@ export default class HeroSection extends Component {
                   <div className="relative">
                     <img
                       src={directory[2] ? directory[2].avatar : AvatarPlaceholder}
-                      alt=""
+                      alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -118,7 +118,7 @@ export default class HeroSection extends Component {
                   <div className="relative">
                     <img
                       src={directory[3] ? directory[3].avatar : AvatarPlaceholder}
-                      alt=""
+                      alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -126,7 +126,7 @@ export default class HeroSection extends Component {
                   <div className="relative">
                     <img
                       src={directory[4] ? directory[4].avatar : AvatarPlaceholder}
-                      alt=""
+                      alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
