@@ -37,7 +37,7 @@ export default class TeamSection extends Component {
           role="list"
           className="text-center mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
-          {loaded_accts.filter((acct) => team[acct]).map((acct) => team[acct]).map((person) => (
+          {loaded_accts.filter((acct) => team[acct] && team[acct]?.roles && team[acct]?.roles[0]).map((acct) => team[acct]).sort((person) => person.roles[0].name === 'Founder' ? -1 : (person.roles[0].name === 'Admin' ? 0 : 1 )).map((person) => (
             <li key={person?.id}>
               <a href={person?.url} className="block" key={person?.name}>
                 <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={person?.avatar} alt="avatar" />

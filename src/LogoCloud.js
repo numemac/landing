@@ -41,7 +41,7 @@ export default function LogoCloud() {
           {logos.map((logo) => (
             <img
               key={logo}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              className="max-h-12 w-full object-contain"
               src={logo}
               alt="Logo"
               width={158}
