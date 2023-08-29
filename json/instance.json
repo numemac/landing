@@ -1,0 +1,150 @@
+{
+  "uri": "veganism.social",
+  "title": "Veganism Social",
+  "short_description": "Veganism Social is a place on the internet for vegans to make friends and interact with the wider decentralized social media.",
+  "description": "A decentralized social network for vegans with a focus on animal rights.",
+  "email": "admin@veganism.social",
+  "version": "4.2.0-beta2+vegan",
+  "urls": {
+    "streaming_api": "wss://veganism.social"
+  },
+  "stats": {
+    "user_count": 2437,
+    "status_count": 56313,
+    "domain_count": 19521
+  },
+  "thumbnail": "https://sfo3.digitaloceanspaces.com/veganism-space/site_uploads/files/000/000/005/@1x/079b8cddf3e03483.png",
+  "languages": [
+    "en"
+  ],
+  "registrations": true,
+  "approval_required": false,
+  "invites_enabled": true,
+  "configuration": {
+    "accounts": {
+      "max_featured_tags": 10
+    },
+    "statuses": {
+      "max_characters": 10000,
+      "max_media_attachments": 4,
+      "characters_reserved_per_url": 23
+    },
+    "media_attachments": {
+      "supported_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/gif",
+        "image/heic",
+        "image/heif",
+        "image/webp",
+        "image/avif",
+        "video/webm",
+        "video/mp4",
+        "video/quicktime",
+        "video/ogg",
+        "audio/wave",
+        "audio/wav",
+        "audio/x-wav",
+        "audio/x-pn-wave",
+        "audio/vnd.wave",
+        "audio/ogg",
+        "audio/vorbis",
+        "audio/mpeg",
+        "audio/mp3",
+        "audio/webm",
+        "audio/flac",
+        "audio/aac",
+        "audio/m4a",
+        "audio/x-m4a",
+        "audio/mp4",
+        "audio/3gpp",
+        "video/x-ms-asf"
+      ],
+      "image_size_limit": 16777216,
+      "image_matrix_limit": 33177600,
+      "video_size_limit": 103809024,
+      "video_frame_rate_limit": 120,
+      "video_matrix_limit": 8294400
+    },
+    "polls": {
+      "max_options": 4,
+      "max_characters_per_option": 50,
+      "min_expiration": 300,
+      "max_expiration": 2629746
+    }
+  },
+  "contact_account": {
+    "id": "109373550092719344",
+    "username": "nm",
+    "acct": "nm",
+    "display_name": "Nume MacAroon Ⓥ",
+    "locked": false,
+    "bot": false,
+    "discoverable": true,
+    "group": false,
+    "created_at": "2022-11-20T00:00:00.000Z",
+    "note": "<p>I post about veganism, animal rights, and growing our activist space in the Fediverse.</p>",
+    "url": "https://veganism.social/@nm",
+    "uri": "https://veganism.social/users/nm",
+    "avatar": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/373/550/092/719/344/original/6259dff0ff0014db.jpeg",
+    "avatar_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/373/550/092/719/344/original/6259dff0ff0014db.jpeg",
+    "header": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/373/550/092/719/344/original/75019787a4e4b0ba.jpeg",
+    "header_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/373/550/092/719/344/original/75019787a4e4b0ba.jpeg",
+    "followers_count": 1338,
+    "following_count": 1077,
+    "statuses_count": 480,
+    "last_status_at": "2023-08-29",
+    "noindex": false,
+    "emojis": [],
+    "roles": [
+      {
+        "id": "3",
+        "name": "Founder",
+        "color": "#009051"
+      }
+    ],
+    "fields": [
+      {
+        "name": "Veganism.social",
+        "value": "<a href=\"https://veganism.social\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">veganism.social</span><span class=\"invisible\"></span></a>",
+        "verified_at": null
+      },
+      {
+        "name": "Pronouns",
+        "value": "He/him",
+        "verified_at": null
+      },
+      {
+        "name": "Our server's Patreon",
+        "value": "<a href=\"https://www.patreon.com/veganismsocial\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"\">patreon.com/veganismsocial</span><span class=\"invisible\"></span></a>",
+        "verified_at": null
+      }
+    ]
+  },
+  "rules": [
+    {
+      "id": "25",
+      "text": "No speciesism, animal abuse, carnists, omnivores, vegetarians, or other non-vegans"
+    },
+    {
+      "id": "26",
+      "text": "Sexually explicit or violent media must be marked as sensitive when posting"
+    },
+    {
+      "id": "27",
+      "text": "No racism, sexism, homophobia, transphobia, xenophobia, fatphobia, or casteism"
+    },
+    {
+      "id": "28",
+      "text": "No incitement of violence or promotion of violent ideologies"
+    },
+    {
+      "id": "29",
+      "text": "No harassment or doxxing of other users"
+    },
+    {
+      "id": "30",
+      "text": "Do not share intentionally false or misleading information"
+    }
+  ]
+}

@@ -30,11 +30,11 @@ class App extends Component {
         }
       )
     }
-    fetch('https://veganism.social/api/v1/instance')
+    fetch('instance.json') // 'https://veganism.social/api/v1/instance
         .then(response => response.json())
         .then(data => this.setState({ instance: data }));
 
-    fetch('https://veganism.social/api/v1/directory?local=true')
+    fetch('directory.json')
         .then(response => response.json())
         .then(data => this.setState({ directory: data }));
   }

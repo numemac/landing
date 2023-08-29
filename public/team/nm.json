@@ -1,0 +1,48 @@
+{
+  "id": "109373550092719344",
+  "username": "nm",
+  "acct": "nm",
+  "display_name": "Nume MacAroon Ⓥ",
+  "locked": false,
+  "bot": false,
+  "discoverable": true,
+  "group": false,
+  "created_at": "2022-11-20T00:00:00.000Z",
+  "note": "<p>I post about veganism, animal rights, and growing our activist space in the Fediverse.</p>",
+  "url": "https://veganism.social/@nm",
+  "uri": "https://veganism.social/users/nm",
+  "avatar": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/373/550/092/719/344/original/6259dff0ff0014db.jpeg",
+  "avatar_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/373/550/092/719/344/original/6259dff0ff0014db.jpeg",
+  "header": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/373/550/092/719/344/original/75019787a4e4b0ba.jpeg",
+  "header_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/373/550/092/719/344/original/75019787a4e4b0ba.jpeg",
+  "followers_count": 1338,
+  "following_count": 1077,
+  "statuses_count": 480,
+  "last_status_at": "2023-08-29",
+  "noindex": false,
+  "emojis": [],
+  "roles": [
+    {
+      "id": "3",
+      "name": "Founder",
+      "color": "#009051"
+    }
+  ],
+  "fields": [
+    {
+      "name": "Veganism.social",
+      "value": "<a href=\"https://veganism.social\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">veganism.social</span><span class=\"invisible\"></span></a>",
+      "verified_at": null
+    },
+    {
+      "name": "Pronouns",
+      "value": "He/him",
+      "verified_at": null
+    },
+    {
+      "name": "Our server's Patreon",
+      "value": "<a href=\"https://www.patreon.com/veganismsocial\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"\">patreon.com/veganismsocial</span><span class=\"invisible\"></span></a>",
+      "verified_at": null
+    }
+  ]
+}
