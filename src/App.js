@@ -14,6 +14,23 @@ import Footer from './Footer'
 class App extends Component {
 
   componentDidMount() {
+    if (!this.state) {
+      this.setState(
+        {
+          instance: {
+            stats: {
+              user_count: 0,
+              status_count: 0,
+              domain_count: 0
+            },
+            rules: [],
+            thumbnail: "#",
+            short_description: "Veganism Social is a place on the internet for vegans to make friends and interact with the wider decentralized social media.",
+          },
+          directory: []
+        }
+      )
+    }
     fetch('https://veganism.social/api/v1/instance')
         .then(response => response.json())
         .then(data => this.setState({ instance: data }));
@@ -26,7 +43,6 @@ class App extends Component {
   render() {
     if (!this.state) return (<div>Loading...</div>);
     const { instance, directory } = this.state;
-    if (!instance || !directory) return (<></>);
 
     return (
       <div className="bg-white">

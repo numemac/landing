@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-import Logo from './logo.svg'
+import Wordmark from './wordmark.png'
 
 export default function Header() {
 
@@ -22,8 +22,8 @@ export default function Header() {
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
-              className="h-16 w-auto"
-              src={Logo}
+              className="h-12 w-auto"
+              src={Wordmark}
               alt=""
             />
           </a>
@@ -58,8 +58,8 @@ export default function Header() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-16 w-auto"
-                src={Logo}
+                className="h-12 w-auto"
+                src={Wordmark}
                 alt=""
               />
             </a>

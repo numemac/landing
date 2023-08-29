@@ -88,7 +88,7 @@ export default class HeroSection extends Component {
                 <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div className="relative">
                     <img
-                      src={directory[0].avatar}
+                      src={directory[0] ? directory[0].avatar : "#"}
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -98,7 +98,7 @@ export default class HeroSection extends Component {
                 <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div className="relative">
                     <img
-                      src={directory[1].avatar}
+                      src={directory[1] ? directory[1].avatar : "#"}
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -106,7 +106,7 @@ export default class HeroSection extends Component {
                   </div>
                   <div className="relative">
                     <img
-                      src={directory[2].avatar}
+                      src={directory[2] ? directory[2].avatar : "#"}
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -116,7 +116,7 @@ export default class HeroSection extends Component {
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div className="relative">
                     <img
-                      src={directory[3].avatar}
+                      src={directory[3] ? directory[3].avatar : "#"}
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -124,7 +124,7 @@ export default class HeroSection extends Component {
                   </div>
                   <div className="relative">
                     <img
-                      src={directory[4].avatar}
+                      src={directory[4] ? directory[4].avatar : "#"}
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
