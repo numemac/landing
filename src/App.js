@@ -24,7 +24,6 @@ class App extends Component {
               domain_count: 0
             },
             rules: [],
-            thumbnail: "#",
             short_description: "Veganism Social is a place on the internet for vegans to make friends and interact with the wider decentralized social media.",
           },
           directory: []

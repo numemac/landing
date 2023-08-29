@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Banner from "./banner-wide.png";
 
 export default class ImageSection extends Component {
 
@@ -15,7 +16,7 @@ export default class ImageSection extends Component {
     return (
       <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
         <img
-          src={instance?.thumbnail}
+          src={Banner}
           alt=""
           className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
         />
