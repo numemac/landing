@@ -39,6 +39,7 @@ class App extends Component {
           directory: []
         }
       )
+      return (<></>);
     }
 
     const { instance, directory } = this.state;
