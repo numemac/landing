@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import { UserPlusIcon } from '@heroicons/react/24/outline';
 import AvatarPlaceholder from './avatar-placeholder.png';
 
+const featured_accts = ['liftingveganlogic', 'animalsavemovement', 'algorithm', 'foaorg', 'ellie']
+
 export default class HeroSection extends Component {
 
   constructor(props) {
@@ -11,11 +13,23 @@ export default class HeroSection extends Component {
     this.state = {
       instance: null,
       directory: null,
+      loaded_accts: [],
+      featured: {},
     };
+
+    featured_accts.forEach((acct) => {
+      fetch(`/about/featured/${acct}.json`)
+        .then(response => response.json())
+        .then(data => {
+          this.setState((state) => ({ loaded_accts: [...state.loaded_accts, data] }))
+        }).catch((error) => {
+          console.error(error);
+        });
+    })
   }
 
   render() {
-    const { instance, directory } = this.props;
+    const { instance, directory, loaded_accts } = this.state;
 
     return (
       <div className="relative isolate -z-10">
@@ -89,7 +103,7 @@ export default class HeroSection extends Component {
                 <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div className="relative">
                     <img
-                      src={directory[0] ? directory[0].avatar : AvatarPlaceholder}
+                      src={loaded_accts && loaded_accts[0] ? loaded_accts[0].avatar : AvatarPlaceholder}
                       alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -99,7 +113,7 @@ export default class HeroSection extends Component {
                 <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div className="relative">
                     <img
-                      src={directory[1] ? directory[1].avatar : AvatarPlaceholder}
+                      src={loaded_accts && loaded_accts[1] ? loaded_accts[1].avatar : AvatarPlaceholder}
                       alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -107,7 +121,7 @@ export default class HeroSection extends Component {
                   </div>
                   <div className="relative">
                     <img
-                      src={directory[2] ? directory[2].avatar : AvatarPlaceholder}
+                      src={loaded_accts && loaded_accts[2] ? loaded_accts[2].avatar : AvatarPlaceholder}
                       alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -117,7 +131,7 @@ export default class HeroSection extends Component {
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div className="relative">
                     <img
-                      src={directory[3] ? directory[3].avatar : AvatarPlaceholder}
+                      src={loaded_accts && loaded_accts[3] ? loaded_accts[3].avatar : AvatarPlaceholder}
                       alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -125,7 +139,7 @@ export default class HeroSection extends Component {
                   </div>
                   <div className="relative">
                     <img
-                      src={directory[4] ? directory[4].avatar : AvatarPlaceholder}
+                      src={loaded_accts && loaded_accts[4] ? loaded_accts[4].avatar : AvatarPlaceholder}
                       alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />

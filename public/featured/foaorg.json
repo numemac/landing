@@ -1,0 +1,32 @@
+{
+  "id": "109603677048484514",
+  "username": "FoAorg",
+  "acct": "FoAorg",
+  "display_name": "Friends of Animals",
+  "locked": false,
+  "bot": false,
+  "discoverable": true,
+  "group": false,
+  "created_at": "2022-12-30T00:00:00.000Z",
+  "note": "<p>Saving animals from exploitation around the world since 1957. National spay and neuter program. <a href=\"https://veganism.social/tags/BeVegan\" class=\"mention hashtag\" rel=\"tag\">#<span>BeVegan</span></a>. Visit us at FriendsofAnimals.org</p>",
+  "url": "https://veganism.social/@FoAorg",
+  "uri": "https://veganism.social/users/FoAorg",
+  "avatar": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/603/677/048/484/514/original/0b4fb90ce18a9707.png",
+  "avatar_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/603/677/048/484/514/original/0b4fb90ce18a9707.png",
+  "header": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/603/677/048/484/514/original/dd85f74d544f18fc.png",
+  "header_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/603/677/048/484/514/original/dd85f74d544f18fc.png",
+  "followers_count": 383,
+  "following_count": 461,
+  "statuses_count": 50,
+  "last_status_at": "2023-08-28",
+  "noindex": false,
+  "emojis": [],
+  "roles": [],
+  "fields": [
+    {
+      "name": "website",
+      "value": "friendsofanimals.org",
+      "verified_at": null
+    }
+  ]
+}

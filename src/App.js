@@ -6,19 +6,20 @@ import ImageSection from './ImageSecion'
 import ValuesSection from './ValuesSection'
 import LogoCloud from './LogoCloud'
 import TeamSection from './TeamSection'
-import BlogSection from './BlogSection'
-import ProfilesSection from './ProfilesSection';
+import ProfilesSection from './ProfilesSection'
+import FAQ from './FAQ'
 import Header from './Header'
 import Footer from './Footer'
+import { FaceFrownIcon } from '@heroicons/react/24/outline';
 
 class App extends Component {
 
   componentDidMount() {
-    fetch('/about/instance.json', { mode: 'cors' }) // 'https://veganism.social/api/v1/instance
+    fetch('/about/instance.json') // 'https://veganism.social/api/v1/instance
         .then(response => response.json())
         .then(data => this.setState({ instance: data }));
 
-    fetch('/about/directory.json', { mode: 'cors' })
+    fetch('/about/directory.json')
         .then(response => response.json())
         .then(data => this.setState({ directory: data }));
   }
@@ -51,11 +52,12 @@ class App extends Component {
         <main className="isolate">
           <HeroSection instance={instance} directory={directory} />
           <ContentSection instance={instance} />
-          <ProfilesSection directory={directory} />
           <ImageSection instance={instance} />
+          <ProfilesSection directory={directory} />
           <ValuesSection instance={instance} />
-          <LogoCloud />
           <TeamSection />
+          <FAQ />
+          <LogoCloud />
         </main>
 
         <Footer />
