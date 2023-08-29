@@ -28,7 +28,7 @@ export default class Content extends Component {
               </p>
               <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
                 <p>
-                  The vegans here would be delighted for you to join us! While there are fewer of us than on billionaire-ran social media, we connect with other decentralized social networks. You can interact with the excellent people on Mastodon, Lemmy, KBin, Pixelfed, or PeerTube from Veganism Social.
+                  The vegans here would be delighted for you to join us! While there are fewer of us than on billionaire-run social media, we connect with other decentralized social networks. You can interact with the excellent people on Mastodon, Lemmy, KBin, Pixelfed, or PeerTube from Veganism Social.
                 </p>
                 <p className="mt-10">
                   There are absolutely no fees to use Veganism Social. We want you to be our newest friend. Let's do activism together! Generous crowdfunders pay for our server costs.
