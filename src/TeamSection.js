@@ -45,7 +45,7 @@ export default class TeamSection extends Component {
               </a>
             </li>
           ))}
-</ul>
+        </ul>
       </div>
     </div>
     )
