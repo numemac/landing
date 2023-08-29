@@ -71,8 +71,16 @@ export default class HeroSection extends Component {
                     className="animate-wiggle inline-flex items-center gap-x-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     href="https://veganism.social/auth/sign_up"
                   >
-                    Create Your Account
+                    Create account
                     <UserPlusIcon className="-mr-0.5 h-6 w-6" aria-hidden="true" />
+                  </a>
+
+                  <a
+                    type="button"
+                    className="ml-4 inline-flex items-center gap-x-2 rounded-md bg-gray-100 px-3.5 py-2.5 text-xl font-semibold text-black shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 border-gray-300 border-2"
+                    href="https://veganism.social/auth/sign_in"
+                  >
+                    Log in
                   </a>
                 </div>
               </div>
