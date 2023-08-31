@@ -9,9 +9,9 @@
     "streaming_api": "wss://veganism.social"
   },
   "stats": {
-    "user_count": 2437,
-    "status_count": 56419,
-    "domain_count": 19523
+    "user_count": 2465,
+    "status_count": 57040,
+    "domain_count": 19578
   },
   "thumbnail": "https://sfo3.digitaloceanspaces.com/veganism-space/site_uploads/files/000/000/005/@1x/079b8cddf3e03483.png",
   "languages": [
@@ -86,14 +86,14 @@
     "note": "<p>I post about veganism, animal rights, and growing our activist space in the Fediverse.</p>",
     "url": "https://veganism.social/@nm",
     "uri": "https://veganism.social/users/nm",
-    "avatar": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/373/550/092/719/344/original/6259dff0ff0014db.jpeg",
-    "avatar_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/373/550/092/719/344/original/6259dff0ff0014db.jpeg",
+    "avatar": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/373/550/092/719/344/original/e436a9a0c03f0c75.jpeg",
+    "avatar_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/373/550/092/719/344/original/e436a9a0c03f0c75.jpeg",
     "header": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/373/550/092/719/344/original/75019787a4e4b0ba.jpeg",
     "header_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/373/550/092/719/344/original/75019787a4e4b0ba.jpeg",
-    "followers_count": 1338,
-    "following_count": 1077,
-    "statuses_count": 476,
-    "last_status_at": "2023-08-29",
+    "followers_count": 1360,
+    "following_count": 1114,
+    "statuses_count": 525,
+    "last_status_at": "2023-08-31",
     "noindex": false,
     "emojis": [],
     "roles": [

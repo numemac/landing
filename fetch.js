@@ -17,7 +17,7 @@ fetch('https://veganism.social/api/v1/directory?local=true?limit=80')
         .then(data => fs.writeFileSync(`public/team/${acct}.json`, JSON.stringify(data, null, 2)));
 });
 
-['liftingveganlogic', 'animalsavemovement', 'algorithm', 'foaorg', 'ellie'].forEach((acct) => {
+['liftingveganlogic', 'animalsavemovement', 'algorithm', 'foaorg', 'vegangaze'].forEach((acct) => {
     fetch(`https://veganism.social/api/v1/accounts/lookup?acct=${acct}`)
         .then(response => response.json())
         .then(data => fs.writeFileSync(`public/featured/${acct}.json`, JSON.stringify(data, null, 2)));
