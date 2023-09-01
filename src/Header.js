@@ -12,6 +12,7 @@ export default function Header() {
     { name: 'Trending', href: 'https://veganism.social/vegans' },
     { name: 'New', href: 'https://veganism.social/public/local' },
     { name: 'Patreon', href: 'https://www.patreon.com/veganismsocial' },
+    { name: 'Merch', href: 'https://shop.veganism.social/' },
     { name: 'Uptime', href: 'https://uptime.veganism.social/' },
   ]
 
