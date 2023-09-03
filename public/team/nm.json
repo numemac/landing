@@ -15,10 +15,10 @@
   "avatar_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/avatars/109/373/550/092/719/344/original/e436a9a0c03f0c75.jpeg",
   "header": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/373/550/092/719/344/original/75019787a4e4b0ba.jpeg",
   "header_static": "https://sfo3.digitaloceanspaces.com/veganism-space/accounts/headers/109/373/550/092/719/344/original/75019787a4e4b0ba.jpeg",
-  "followers_count": 1360,
-  "following_count": 1114,
-  "statuses_count": 526,
-  "last_status_at": "2023-08-31",
+  "followers_count": 1374,
+  "following_count": 847,
+  "statuses_count": 643,
+  "last_status_at": "2023-09-03",
   "noindex": false,
   "emojis": [],
   "roles": [
@@ -42,6 +42,11 @@
     {
       "name": "Our server's Patreon",
       "value": "<a href=\"https://www.patreon.com/veganismsocial\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"\">patreon.com/veganismsocial</span><span class=\"invisible\"></span></a>",
+      "verified_at": null
+    },
+    {
+      "name": "Merch",
+      "value": "<a href=\"https://shop.veganism.social/\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">shop.veganism.social/</span><span class=\"invisible\"></span></a>",
       "verified_at": null
     }
   ]
