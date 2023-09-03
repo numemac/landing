@@ -25,5 +25,6 @@ yarn-error.log*
 # Data that's generated at build, get it by running node fetch.js
 /public/team
 /public/featured
+/public/avatars
 /public/directory.json
 /public/instance.json

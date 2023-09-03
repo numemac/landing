@@ -1,4 +1,4 @@
-import PlantBasedTreatyBadge from './pbt-badge.png'
+import PlantBasedTreatyBadge from './pbt-badge.webp'
 
 export default function Footer() {
 

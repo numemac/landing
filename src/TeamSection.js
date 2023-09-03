@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import VeganismSocialCar from './veganismsocialcar.jpeg'
+import VeganismSocialCar from './veganismsocialcar.webp'
 
 const team_accts = ['nm', 'Ellie', 'beforewisdom', 'melissaratisher', 'carlile', 'cinzalorxu']
 
@@ -39,7 +39,7 @@ export default class TeamSection extends Component {
             {loaded_accts.filter((acct) => team[acct] && team[acct]?.roles && team[acct]?.roles[0]).map((acct) => team[acct]).sort((person) => person.roles[0].name === 'Founder' ? -1 : (person.roles[0].name === 'Admin' ? 0 : 1 )).map((person) => (
               <li key={person?.id}>
                 <a href={person?.url} className="block" key={person?.name}>
-                  <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={person?.avatar} alt="avatar" />
+                  <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={`/about/avatars/${person?.acct}-364-243.webp`} alt="avatar" />
                   <h3 className="mt-6 text-lg font-semibold leading-8 text-gray-900">{person?.display_name}</h3>
                   <p className="text-base leading-7 text-gray-600">{(person?.roles && person?.roles[0]) ? person?.roles[0]["name"] : ''}</p>
                 </a>

@@ -19,6 +19,8 @@ export default class ImageSection extends Component {
           src={Banner}
           alt="Veganism Social powered by Mastodon"
           className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
+          width="1200"
+          height="378"
         />
       </div>
     )

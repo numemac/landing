@@ -103,9 +103,11 @@ export default class HeroSection extends Component {
                 <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div className="relative">
                     <img
-                      src={loaded_accts && loaded_accts[0] ? loaded_accts[0].avatar : AvatarPlaceholder}
+                      src={loaded_accts && loaded_accts[0] ? `/about/avatars/${loaded_accts[0]?.acct}-176-264.webp` : AvatarPlaceholder}
                       alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      width="176"
+                      height="264"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
@@ -113,17 +115,21 @@ export default class HeroSection extends Component {
                 <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div className="relative">
                     <img
-                      src={loaded_accts && loaded_accts[1] ? loaded_accts[1].avatar : AvatarPlaceholder}
+                      src={loaded_accts && loaded_accts[1] ? `/about/avatars/${loaded_accts[1]?.acct}-176-264.webp` : AvatarPlaceholder}
                       alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      width="176"
+                      height="264"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                   <div className="relative">
                     <img
-                      src={loaded_accts && loaded_accts[2] ? loaded_accts[2].avatar : AvatarPlaceholder}
+                      src={loaded_accts && loaded_accts[2] ? `/about/avatars/${loaded_accts[2]?.acct}-176-264.webp` : AvatarPlaceholder}
                       alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      width="176"
+                      height="264"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
@@ -131,17 +137,21 @@ export default class HeroSection extends Component {
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div className="relative">
                     <img
-                      src={loaded_accts && loaded_accts[3] ? loaded_accts[3].avatar : AvatarPlaceholder}
+                      src={loaded_accts && loaded_accts[3] ? `/about/avatars/${loaded_accts[3]?.acct}-176-264.webp` : AvatarPlaceholder}
                       alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      width="176"
+                      height="264"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                   <div className="relative">
                     <img
-                      src={loaded_accts && loaded_accts[4] ? loaded_accts[4].avatar : AvatarPlaceholder}
+                      src={loaded_accts && loaded_accts[4] ? `/about/avatars/${loaded_accts[4]?.acct}-176-264.webp` : AvatarPlaceholder}
                       alt="avatar"
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      width="176"
+                      height="264"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>

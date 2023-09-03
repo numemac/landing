@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-import Wordmark from './wordmark.png'
+import Wordmark from './wordmark.webp'
 
 export default function Header() {
 
@@ -26,6 +26,8 @@ export default function Header() {
               className="h-12 w-auto"
               src={Wordmark}
               alt="Wordmark"
+              width="252"
+              height="82"
             />
           </a>
         </div>
@@ -62,6 +64,8 @@ export default function Header() {
                 className="h-12 w-auto"
                 src={Wordmark}
                 alt="Wordmark"
+                width="252"
+                height="82"
               />
             </a>
             <button
