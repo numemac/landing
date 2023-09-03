@@ -10,7 +10,7 @@ export default class TeamSection extends Component {
       this.setState({ team: {}, loaded_accts: [] })
 
       team_accts.forEach((acct) => {
-        fetch(`/about/team/${acct}.json`, { mode: 'cors' })
+        fetch(`/about/team/${acct}.json`)
           .then(response => response.json())
           .then(data => {
             this.setState((state) => ({ loaded_accts: [...state.loaded_accts, acct].filter((value, index, array) => array.indexOf(value) === index) }))
