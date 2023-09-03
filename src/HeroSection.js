@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { UserPlusIcon } from '@heroicons/react/24/outline';
 import AvatarPlaceholder from './avatar-placeholder.png';
 
-const featured_accts = ['liftingveganlogic', 'animalsavemovement', 'algorithm', 'foaorg', 'ellie']
+const featured_accts = ['liftingveganlogic', 'animalsavemovement', 'algorithm', 'foaorg', 'vegangaze']
 
 export default class HeroSection extends Component {
 
