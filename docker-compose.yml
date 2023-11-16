@@ -1,5 +1,6 @@
 services:
   landing:
+    build: .
     image: auguryan/landing
     restart: always
     ports:
