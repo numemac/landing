@@ -1,7 +1,0 @@
-services:
-  landing:
-    build: .
-    image: auguryan/landing
-    restart: always
-    ports:
-      - '127.0.0.1:3006:3006'
