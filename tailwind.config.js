@@ -29,6 +29,7 @@ module.exports = {
         'more-plus': 'bounce 2s infinite',
         'wiggle': 'wiggle 3s ease-in-out infinite',
         'slide-in': 'fade-in 1s ease-in-out forwards',
+        'join': 'wiggle 3s ease-in-out infinite'
       }
     },
   },

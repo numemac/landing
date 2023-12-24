@@ -11,17 +11,20 @@ const header_links = [
 const supplementary_links = [
     { href: `${API_ENDPOINT}/privacy-policy`, label: 'Privacy Policy' },
     { href: `https://joinmastodon.org/`, label: 'About Mastodon' },
-    { href: `https://joinmastodon.org/apps`, label: 'Get an App' }
+    { href: `https://joinmastodon.org/apps`, label: 'Get an App' },
+    { href: `mailto:admin@veganism.social`, label: 'Contact' },
 ]
 
 // Join <green heart emoji> to the right
-const auth_button = { href: `${API_ENDPOINT}/auth/sign_up`, label: 'Join' }
+const create_account = { href: `${API_ENDPOINT}/auth/sign_up`, label: 'Join' }
+
+const linkClasses = 'hover:text-blue-700 dark:hover:text-blue-300'
 
 const linkRow = (links) => {
     return (
         <div key={1} className="justify-center flex-1 flex gap-8 lg:gap-12 font-bold text-sm lg:text-md my-6">
             {links.map(({ href, label }) => (
-                <a key={label} href={href}>
+                <a key={label} href={href} className={linkClasses}>
                     <span>{label}</span>
                 </a>
             ))}
@@ -43,8 +46,8 @@ export function Header() {
                     </div>
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href={auth_button.href} type="button" className="inline-flex button-small bg-indigo-600 hover:bg-indigo-700 text-white">
-                        <span>{auth_button.label}</span>
+                    <a href={create_account.href} type="button" className="inline-flex button-small bg-indigo-600 hover:bg-indigo-700 text-white animate-join">
+                        <span>{create_account.label}</span>
                     </a>
                 </div>
             </nav>
@@ -68,8 +71,13 @@ export function Footer() {
                 })
             }
             <div className="my-16">
-                <a href={auth_button.href} type="button" className="button bg-indigo-600 hover:bg-indigo-700 text-white animate-wiggle">
-                    <span>Create Account</span>
+                <div className="mb-4">
+                    <a href={create_account.href} type="button" className="button inline-flex bg-indigo-600 hover:bg-indigo-700 text-white animate-wiggle">
+                        <span>Create Account</span>
+                    </a>
+                </div>
+                <a href={`${API_ENDPOINT}/auth/sign_in`} className={linkClasses}>
+                    <span className="text-sm">Already have an account? <span className="font-bold">Sign in</span></span>
                 </a>
             </div>
             <p className="text-sm">© 2023 Veganism Social. All rights reserved.</p>
