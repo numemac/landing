@@ -15,6 +15,11 @@ const supplementary_links = [
     { href: `mailto:admin@veganism.social`, label: 'Contact' },
 ]
 
+const supplementary_links_2 = [
+    { href: `https://github.com/ryan-augustinsky/landing`, label: 'View Source Code' },
+    { href: `https://www.reddit.com/r/VeganismSocial/`, label: 'Official Subreddit' },
+]
+
 // Join <green heart emoji> to the right
 const create_account = { href: `${API_ENDPOINT}/auth/sign_up`, label: 'Join' }
 
@@ -61,7 +66,8 @@ export function Footer() {
             {
                 [
                     header_links,
-                    supplementary_links
+                    supplementary_links,
+                    supplementary_links_2
                 ].map((row, index) => {
                     return (
                         <div key={index}>
