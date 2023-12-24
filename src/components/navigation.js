@@ -15,7 +15,7 @@ const supplementary_links = [
 ]
 
 // Join <green heart emoji> to the right
-const auth_button = { href: '/auth/sign_up', label: 'Join' }
+const auth_button = { href: `${API_ENDPOINT}/auth/sign_up`, label: 'Join' }
 
 const linkRow = (links) => {
     return (

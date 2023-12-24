@@ -14,8 +14,8 @@
   },
   "scripts": {
     "start": "REACT_APP_API_ENDPOINT=http://localhost:3000 react-scripts start",
-    "serve": "PORT=4000 REACT_APP_API_ENDPOINT=https://veganism.social serve -s build",
-    "build": "react-scripts build",
+    "serve": "REACT_APP_API_ENDPOINT=https://veganism.social PORT=4000 serve -s build",
+    "build": "REACT_APP_API_ENDPOINT=https://veganism.social react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

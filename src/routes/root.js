@@ -208,11 +208,11 @@ export default function Root() {
                         The federated social network for vegans
                     </h1>
 
-                    <a href="/auth/sign_up" type="button" className="inline-flex button mr-4 bg-indigo-600 hover:bg-indigo-700 text-white animate-wiggle">
+                    <a href={`${API_ENDPOINT}/auth/sign_up`} type="button" className="inline-flex button mr-4 bg-indigo-600 hover:bg-indigo-700 text-white animate-wiggle">
                         Create Account
                     </a>
 
-                    <a href="/auth/sign_in" type="button" className="button bg-gray-100 hover:bg-gray-200 text-gray-900 border">
+                    <a href={`${API_ENDPOINT}/auth/sign_in`} type="button" className="button bg-gray-100 hover:bg-gray-200 text-gray-900 border">
                         Log in
                     </a>
                 </div>
