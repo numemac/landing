@@ -59,7 +59,7 @@ export default function Root() {
 
     function accountStack(slideshows) {
         return slideshows.map((slideshow) => (slideshow).slice(0, 1).map((account, index) => (
-            <a href={`${API_ENDPOINT}/@${account.username}`} key={index} className="block w-24 lg:w-48 h-36 lg:h-72 ml-8" title={`Visit profile`}>
+            <a href={`${API_ENDPOINT}/@${account.username}`} key={index} className="block w-24 lg:w-48 h-36 lg:h-72 ml-8" title={`Visit ${account.display_name}'s profile`}>
                 <div className="rounded-xl bg-white h-full">
                     <img 
                         src={account.avatar} alt={`${account.username}'s avatar`} 
@@ -160,7 +160,7 @@ export default function Root() {
                 <ul className="flex flex-row flex-wrap justify-start gap-y-12 mt-12">
                     {directory.slice(0, directoryLimit).map((account, index) => (
                         <li key={index} className="w-24 sm:w-40 h-24 sm:h-40 gap-8">
-                            <a className="w-full h-full hover:text-blue-700 dark:hover:text-blue-300" href={`${API_ENDPOINT}/@${account.username}`} title={`Visit profile`}>
+                            <a className="w-full h-full hover:text-blue-700 dark:hover:text-blue-300" href={`${API_ENDPOINT}/@${account.username}`} title={`Visit ${account.display_name}'s profile`}>
                                 <div className="w-16 sm:w-28 h-16 sm:h-28 mx-auto">
                                     <img 
                                         src={account.avatar} alt={`${account.username}'s avatar`} 
