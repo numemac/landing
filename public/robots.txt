@@ -1,3 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
+Sitemap: https://veganism.social/sitemap.xml.gz
+
+User-agent: GPTBot
+Disallow: /
+
 User-agent: *
-Disallow:
+Disallow: /media_proxy/
+Disallow: /interact/
