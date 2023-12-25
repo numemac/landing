@@ -59,7 +59,7 @@ export default function Root() {
 
     function accountStack(slideshows) {
         return slideshows.map((slideshow) => (slideshow).slice(0, 1).map((account, index) => (
-            <a href={`${API_ENDPOINT}/@${account.username}`} key={index} className="block w-24 lg:w-48 h-36 lg:h-72 ml-8" title={`Visit ${account.display_name}'s profile`}>
+            <a href={`${API_ENDPOINT}/@${account.username}`} key={index} className="block w-20 lg:w-36 xl:w-48 h-32 lg:h-48 xl:h-72 ml-8" title={`Visit ${account.display_name}'s profile`}>
                 <div className="rounded-xl bg-white h-full">
                     <img 
                         src={account.avatar} alt={`${account.username}'s avatar`} 
@@ -82,15 +82,15 @@ export default function Root() {
         return (
             <div className="flex-auto hidden sm:block">
                 <div className="flex">
-                    <div className="lg:flex-1 lg:my-auto hidden lg:block">
+                    <div className="md:flex-1 md:my-auto hidden md:block">
                         {accountStack(slideshows.slice(0, 1))}
                     </div>
 
-                    <div className="lg:flex-1 lg:mt-16 block lg:block">
+                    <div className="md:flex-1 md:mt-16">
                         {accountStack(slideshows.slice(1, 3))}
                     </div>
                     
-                    <div className="xl:flex-1 lg:hidden xl:block">
+                    <div className="md:flex-1">
                         {accountStack(slideshows.slice(3, 5))}
                     </div>
                 </div>
@@ -101,7 +101,7 @@ export default function Root() {
     function instanceThumbnail() {
         if (instance === null) { return (<div>Loading</div>); }
         return (
-            <div className="mx-auto my-32 lg:w-2/3 w-full">
+            <div className="mx-auto my-24 lg:w-2/3 w-full">
                 <img src={instance.thumbnail} alt="Veganism Social's thumbnail" className="rounded-xl shadow-lg" />
                 <p className="text-center my-3">Veganism Social is powered by <a className="text-blue-500 hover:text-blue-700 dark:hover:text-blue-300" href="https://joinmastodon.org">Mastodon</a></p>
             </div>
@@ -143,8 +143,8 @@ export default function Root() {
         function seeMore() {
             if (directory.length <= directoryLimit) return (<></>);
             return (
-                <li key={directoryLimit} className="w-24 sm:w-40 h-24 sm:h-40 cursor-pointer gap-8" onClick={() => setDirectoryLimit(directoryLimit + 20)}>
-                    <div className="w-16 sm:w-28 h-16 sm:h-28 mx-auto bg-indigo-600 hover:bg-indigo-700 rounded-full flex justify-center items-center">
+                <li key={directoryLimit} className="min-w-24 min-h-24 md:min-w-36 md:min-h-36 cursor-pointer" onClick={() => setDirectoryLimit(directoryLimit + 20)}>
+                    <div className="w-16 h-16 md:w-24 md:h-24 mx-auto bg-indigo-600 hover:bg-indigo-700 rounded-full flex justify-center items-center">
                         <p className="mt-2 flex text-xl sm:text-5xl text-white animate-more-plus">+</p>
                     </div>
                     <span className="text-center block text-xs sm:text-xl font-bold my-3">See More</span>
@@ -153,21 +153,21 @@ export default function Root() {
         }
 
         return (
-            <div className="my-32">
+            <div className="my-24">
                 <h2 className="subtitle">
                     Some of our members
                 </h2>
-                <ul className="flex flex-row flex-wrap justify-start gap-y-12 mt-12">
+                <ul className="grid gap-x-6 gap-y-12 sm:gap-y-16 my-16 grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7">
                     {directory.slice(0, directoryLimit).map((account, index) => (
-                        <li key={index} className="w-24 sm:w-40 h-24 sm:h-40 gap-8">
+                        <li key={index} className="min-w-24 min-h-24 md:min-w-36 md:min-h-36">
                             <a className="w-full h-full hover:text-blue-700 dark:hover:text-blue-300" href={`${API_ENDPOINT}/@${account.username}`} title={`Visit ${account.display_name}'s profile`}>
-                                <div className="w-16 sm:w-28 h-16 sm:h-28 mx-auto">
+                                <div className="w-16 h-16 md:w-24 md:h-24 mx-auto">
                                     <img 
                                         src={account.avatar} alt={`${account.username}'s avatar`} 
                                         className="object-cover h-full rounded-full"
                                     />
                                 </div>
-                                <span className="text-center block text-xs sm:text-sm font-bold my-2">{account.display_name}</span>
+                                <span className="text-center block text-sm md:text-md font-bold my-2">{account.display_name}</span>
                                 <span className="text-center hidden sm:block text-xs my-2">@{account.username}</span>
                             </a>
                         </li>
@@ -175,13 +175,13 @@ export default function Root() {
                     {seeMore()}
                 </ul>
             </div>
-        );
+        )
     }
 
     function rules() {
         if (instance === null) { return (<div>Loading</div>); }
         return (
-            <div className="my-32">
+            <div className="my-24">
                 <h2 className="subtitle">
                     Our Rules
                 </h2>
