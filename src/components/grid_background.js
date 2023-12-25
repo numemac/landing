@@ -3,14 +3,14 @@ export default function GridBackground() {
     return (
         <div className="relative isolate -z-10">
             <svg
-                className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-300 dark:stroke-gray-500 opacity-60 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+                className="absolute inset-x-0 top-0 -z-10 h-[16rem] sm:h-[32rem] lg:h-[48rem] xl:h-[64rem] w-full stroke-gray-300 dark:stroke-gray-500 opacity-60 [mask-image:radial-gradient(8rem_8rem_at_center,white,transparent)] sm:[mask-image:radial-gradient(16rem_16rem_at_center,white,transparent)] lg:[mask-image:radial-gradient(24rem_24rem_at_center,white,transparent)] xl:[mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
                 aria-hidden="true"
             >
                 <defs>
                     <pattern
                         id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
-                        width={200}
-                        height={200}
+                        width={100}
+                        height={100}
                         x="50%"
                         y={-1}
                         patternUnits="userSpaceOnUse"
