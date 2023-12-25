@@ -5,19 +5,23 @@ const header_links = [
     { href: `${API_ENDPOINT}/public/local`, label: 'New' },
     { href: `https://www.patreon.com/veganismsocial`, label: 'Patreon' },
     { href: `https://uptime.veganism.social`, label: 'Uptime' },
-    { href: `https://fedipact.veganism.social/`, label: 'Fedipact' },
 ]
 
 const supplementary_links = [
     { href: `${API_ENDPOINT}/privacy-policy`, label: 'Privacy Policy' },
     { href: `https://joinmastodon.org/`, label: 'About Mastodon' },
     { href: `https://joinmastodon.org/apps`, label: 'Get an App' },
-    { href: `mailto:admin@veganism.social`, label: 'Contact' },
 ]
 
 const supplementary_links_2 = [
-    { href: `https://github.com/ryan-augustinsky/landing`, label: 'View Source Code' },
-    { href: `https://www.reddit.com/r/VeganismSocial/`, label: 'Official Subreddit' },
+    { href: `https://github.com/ryan-augustinsky/landing`, label: 'Source Code' },
+    { href: `https://fedipact.veganism.social/`, label: 'Fedipact' },
+    { href: `https://www.reddit.com/r/VeganismSocial/`, label: 'Subreddit' },
+]
+
+const supplementary_links_3 = [
+    { href: `mailto:admin@veganism.social`, label: 'Email Contact' },
+    { href: `https://veganism.social/@nm`, label: 'Fedi Contact' },
 ]
 
 // Join <green heart emoji> to the right
@@ -27,7 +31,7 @@ const linkClasses = 'hover:text-blue-700 dark:hover:text-blue-300'
 
 const linkRow = (links) => {
     return (
-        <div key={1} className="justify-center flex-1 flex gap-8 lg:gap-12 font-bold text-sm lg:text-md my-6">
+        <div key={1} className="justify-center flex-1 flex gap-8 lg:gap-12 font-bold text-xs sm:text-sm lg:text-md my-6">
             {links.map(({ href, label }) => (
                 <a key={label} href={href} className={linkClasses}>
                     <span>{label}</span>
@@ -67,7 +71,8 @@ export function Footer() {
                 [
                     header_links,
                     supplementary_links,
-                    supplementary_links_2
+                    supplementary_links_2,
+                    supplementary_links_3,
                 ].map((row, index) => {
                     return (
                         <div key={index}>
