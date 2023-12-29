@@ -17,7 +17,8 @@
     "serve": "REACT_APP_API_ENDPOINT=https://veganism.social PORT=5000 serve -s build",
     "build": "REACT_APP_API_ENDPOINT=https://veganism.social react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "source-map-explorer": "^2.5.3",
     "tailwindcss": "3.3.6"
   }
 }
