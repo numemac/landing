@@ -65,7 +65,7 @@ export default function Root() {
         // Create placeholders so the layout doesn't jump around
         const indices = Array.from(Array(end - start).keys());
         if (slideshows.length < end) return indices.map((index) => (
-            <div className={anchor_class}>
+            <div className={anchor_class} key={index}>
                 <div className={container_class}>
                     <div 
                         className={image_spacing}
