@@ -57,13 +57,29 @@ export default function Root() {
         return () => clearInterval(interval);
     }, [slideshows]);
 
-    function accountStack(slideshows) {
-        return slideshows.map((slideshow) => (slideshow).slice(0, 1).map((account, index) => (
-            <a href={`${API_ENDPOINT}/@${account.username}`} key={index} className="block w-20 lg:w-36 xl:w-48 h-32 lg:h-48 xl:h-72 ml-8" title={`Visit ${account.display_name}'s profile`}>
+    function accountStack(start, end) {
+        const anchor_class = "block w-20 lg:w-36 xl:w-48 h-32 lg:h-48 xl:h-72 ml-8";
+        const container_class = "rounded-xl bg-white h-full"
+        const image_spacing = "h-full my-12"
+
+        // Create placeholders so the layout doesn't jump around
+        const indices = Array.from(Array(end - start).keys());
+        if (slideshows.length < end) return indices.map((index) => (
+            <div className={anchor_class}>
+                <div className={container_class}>
+                    <div 
+                        className={image_spacing}
+                    />
+                </div>
+            </div>
+        ));
+
+        return slideshows.slice(start, end).map((slideshow) => (slideshow).slice(0, 1).map((account, index) => (
+            <a href={`${API_ENDPOINT}/@${account.username}`} key={index} className={anchor_class} title={`Visit ${account.display_name}'s profile`}>
                 <div className="rounded-xl bg-white h-full">
                     <img 
                         src={account.avatar} alt={`${account.username}'s avatar`} 
-                        className="object-cover h-full my-12 rounded-xl shadow-lg bg-white animate-slide-in"
+                        className={`${image_spacing} object-cover rounded-xl shadow-lg bg-white animate-slide-in`}
                         onLoad={(e) => {
                             // trigger animation
                             e.target.classList.remove('animate-slide-in');
@@ -78,20 +94,19 @@ export default function Root() {
     }
 
     function accountStacks() {
-        if (slideshows.length < 5) return (<div></div>);
         return (
             <div className="flex-auto hidden sm:block">
                 <div className="flex">
                     <div className="md:flex-1 md:my-auto hidden md:block">
-                        {accountStack(slideshows.slice(0, 1))}
+                        {accountStack(0, 1)}
                     </div>
 
                     <div className="md:flex-1 md:mt-16">
-                        {accountStack(slideshows.slice(1, 3))}
+                        {accountStack(1, 3)}
                     </div>
                     
                     <div className="md:flex-1">
-                        {accountStack(slideshows.slice(3, 5))}
+                        {accountStack(3, 5)}
                     </div>
                 </div>
             </div>
