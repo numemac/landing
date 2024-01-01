@@ -91,7 +91,7 @@ export function Footer() {
                     <span className="text-sm">Already have an account? <span className="font-bold">Sign in</span></span>
                 </a>
             </div>
-            <p className="text-sm">© 2023 Veganism Social. All rights reserved.</p>
+            <p className="text-sm">© 2024 Veganism Social. All rights reserved.</p>
         </div>
     );
 }
