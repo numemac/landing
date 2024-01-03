@@ -57,6 +57,14 @@ export default function Root() {
         return () => clearInterval(interval);
     }, [slideshows]);
 
+    const resizeAvatar = (src, size) => {
+        if (src && size && src.includes('/s:/')) {
+          return src.replace('/s:/', '/s:' + size + ':' + size + '/');
+        } else {
+          return src;
+        }
+      }
+
     function accountStack(start, end) {
         const anchor_class = "block w-20 lg:w-36 xl:w-48 h-32 lg:h-48 xl:h-72 ml-8";
         const container_class = "rounded-xl bg-white h-full"
@@ -78,7 +86,7 @@ export default function Root() {
             <a href={`${API_ENDPOINT}/@${account.username}`} key={index} className={anchor_class} title={`Visit ${account.display_name}'s profile`}>
                 <div className="rounded-xl bg-white h-full">
                     <img 
-                        src={account.avatar} alt={`${account.username}'s avatar`} 
+                        src={resizeAvatar(account.avatar, 324)} alt={`${account.username}'s avatar`} 
                         className={`${image_spacing} object-cover rounded-xl shadow-lg bg-white animate-slide-in`}
                         onLoad={(e) => {
                             // trigger animation
@@ -178,7 +186,7 @@ export default function Root() {
                             <a className="w-full h-full hover:text-blue-700 dark:hover:text-blue-300 break-words" href={`${API_ENDPOINT}/@${account.username}`} title={`Visit ${account.display_name}'s profile`}>
                                 <div className="w-16 h-16 md:w-24 md:h-24 mx-auto">
                                     <img 
-                                        src={account.avatar} alt={`${account.username}'s avatar`} 
+                                        src={resizeAvatar(account.avatar, 108)} alt={`${account.username}'s avatar`} 
                                         className="object-cover h-full rounded-full"
                                     />
                                 </div>
