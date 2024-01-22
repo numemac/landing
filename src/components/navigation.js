@@ -55,8 +55,8 @@ export function Header() {
                     </div>
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href={create_account.href} type="button" className="inline-flex button-small bg-indigo-600 hover:bg-indigo-700 text-white animate-join">
-                        <span>{create_account.label}</span>
+                    <a href={`${API_ENDPOINT}/auth/sign_in`} type="button" className="inline-flex button-small bg-indigo-600 hover:bg-indigo-700 text-white">
+                        <span>Log in</span>
                     </a>
                 </div>
             </nav>
@@ -88,7 +88,7 @@ export function Footer() {
                     </a>
                 </div>
                 <a href={`${API_ENDPOINT}/auth/sign_in`} className={linkClasses}>
-                    <span className="text-sm">Already have an account? <span className="font-bold">Sign in</span></span>
+                    <span className="text-sm">Already have an account? <span className="font-bold">Log in</span></span>
                 </a>
             </div>
             <p className="text-sm">© 2024 Veganism Social. All rights reserved.</p>
