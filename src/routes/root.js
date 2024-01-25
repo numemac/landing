@@ -121,16 +121,6 @@ export default function Root() {
         );
     }
 
-    function instanceThumbnail() {
-        if (instance === null) { return (<div>Loading</div>); }
-        return (
-            <div className="mx-auto my-24 lg:w-2/3 w-full">
-                <img src={instance.thumbnail} alt="Veganism Social's thumbnail" className="rounded-xl shadow-lg" />
-                <p className="text-center my-3">Veganism Social is powered by <a className="text-blue-500 hover:text-blue-700 dark:hover:text-blue-300" href="https://joinmastodon.org">Mastodon</a></p>
-            </div>
-        )
-    }
-
     function instanceStats() {
         if (instance === null) { return (<div>Loading</div>); }
 
@@ -262,8 +252,6 @@ export default function Root() {
                     {instanceStats()}
                 </div>
             </div>
-
-            {instanceThumbnail()}
 
             {accountList()}
 
