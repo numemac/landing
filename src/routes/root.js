@@ -44,6 +44,9 @@ export default function Root() {
     // every 10 seconds, rotate the slideshows
     useEffect(() => {
         const interval = setInterval(() => {
+            // don’t start rotating until we actually have slideshows
+            if (slideshows.length === 0) return;
+
             let new_slideshows = structuredClone(slideshows);
             
             // pick a random index to move first index to last index

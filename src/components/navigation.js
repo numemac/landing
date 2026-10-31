@@ -14,7 +14,7 @@ const supplementary_links = [
 ]
 
 const supplementary_links_2 = [
-    { href: `https://github.com/ryan-augustinsky/landing`, label: 'Source Code' },
+    { href: `https://github.com/numemac/landing`, label: 'Source Code' },
     { href: `https://fedipact.veganism.social/`, label: 'Fedipact' },
     { href: `https://www.reddit.com/r/VeganismSocial/`, label: 'Subreddit' },
 ]
@@ -91,7 +91,10 @@ export function Footer() {
                     <span className="text-sm">Already have an account? <span className="font-bold">Log in</span></span>
                 </a>
             </div>
-            <p className="text-sm">© 2024 Veganism Social. All rights reserved.</p>
+            <p className="text-sm">© 2026 Veganism Social. All rights reserved.</p>
+            <a href="https://nume.ca/blog-no-one-is-infrastructure" className={linkClasses}>
+                <span className="text-sm">No One Is Infrastructure</span>
+            </a>
         </div>
     );
 }

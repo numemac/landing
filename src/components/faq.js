@@ -41,7 +41,7 @@ const faqs = [
     question: "How can I contact Veganism Social?",
     answer:
       "You can email us at admin@veganism.social or send @nm a direct message.",
-  },
+  }
 ]
 
 export default function FAQ() {
